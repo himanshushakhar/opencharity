@@ -1,0 +1,31 @@
+// Mission
+// --------------------------------------------------
+
+.mission {
+
+  padding: $grid-gutter-width;
+  background-color: $white;
+  border-radius: 6px;
+  margin-top: 50px;
+  @media (max-width: $screen-xs-max) { margin-bottom: $grid-gutter-width; }
+
+  @include e('image') {
+	width: 100px;
+	height: 100px;
+	padding: 20px 0;
+	border-radius: 50%;
+	background-color: $brand-info;
+	border: 10px solid $white;
+	margin: -80px auto 10px auto;
+    img {
+	  height: 100%;
+	  width: auto;
+	  display: inline;
+    }
+  }
+
+  @include e('title') {
+    color: $brand-info;
+  }
+
+}

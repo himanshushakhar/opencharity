@@ -1,0 +1,15 @@
+// Breadcrumb
+// --------------------------------------------------
+
+.breadcrumb {
+  padding: 0;
+  margin: 5px 0;
+  font-size: ceil(($font-size-base * 0.85));
+  color: lighten($text-color, 15%);
+  a {
+	color: lighten($text-color, 15%);
+  }
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}

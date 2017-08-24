@@ -1,0 +1,13 @@
+// Page title
+// --------------------------------------------------
+
+#page-title-wrapper {
+  background-color: $gray-lighter;
+  padding: 25px 0;
+  @media (min-width: $screen-sm-min) {
+    padding: 35px 0;
+  }
+  #page-title {
+	margin: 0;
+  }
+}

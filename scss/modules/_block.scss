@@ -1,0 +1,11 @@
+// Block
+// --------------------------------------------------
+
+.block {
+
+  @include e('title') {
+	text-transform: uppercase;
+	margin-bottom: 30px;
+  }
+  
+}

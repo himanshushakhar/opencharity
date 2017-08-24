@@ -1,0 +1,13 @@
+// Header
+// --------------------------------------------------
+
+#header {
+  background-color: $navbar-bg;
+  color: $navbar-color;
+  height: 60px;
+  @include transition(all .4s ease-in-out);
+
+  @media (min-width: $grid-float-breakpoint) {
+    height: 80px;
+  }
+}

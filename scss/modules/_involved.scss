@@ -1,0 +1,33 @@
+// Involved
+// --------------------------------------------------
+
+.involved {
+
+  @media (max-width: $screen-xs-max) { margin-bottom: $grid-gutter-width; }
+
+  @include e('image') {
+	margin-bottom: 30px;
+    img {
+	  max-height: 100px;
+	  width: auto;
+	  display: inline;
+    }
+  }
+
+  @include e('title') {
+    text-transform: uppercase;
+  }
+
+  @include e('desc') {
+    margin-bottom: 20px;
+  }
+
+  @include e('link') {
+    .btn {
+	  min-width: 200px;
+	  text-transform: uppercase;
+	  margin: auto;
+    }
+  }
+
+}

@@ -1,0 +1,232 @@
+// Author: Himanshu Shakhar
+// --- Variables ----
+
+
+// open sans font files
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// museo-sans-500 font files
+@font-face {
+	font-family: 'Museo Sans 500';
+	src: url('MuseoSans-500.eot');
+	src: local('Museo Sans 500'), local('MuseoSans-500'),
+		url('../fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSans-500.woff2') format('woff2'),
+		url('../fonts/MuseoSans-500.woff') format('woff'),
+		url('../fonts/MuseoSans-500.ttf') format('truetype'),
+		url('../fonts/MuseoSans-500.svg#MuseoSans-500') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+//== Colors
+$white:					#ffffff !default;
+
+$gray-base:				#000000 !default;
+$gray-darker:			lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:				lighten($gray-base, 20%) !default;   // #333
+$gray:					lighten($gray-base, 33.5%) !default; // #555
+$gray-light:			#d9dadd !default;
+$gray-lighter:			#f1f2f5 !default;
+
+$brand-primary:         #61c0bd !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #57c0d5 !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+// Background color for body
+$body-bg:               $white !default;
+// Global text color body
+$text-color:            #5b6172 !default;
+
+// Global textual link color
+$link-color:            $brand-primary !default;
+// Link hover color
+$link-hover-color:      darken($link-color, 15%) !default;
+// Link hover decoration.
+$link-hover-decoration: none !default;
+
+
+//== Typography
+$font-family-sans-serif:	"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:			Georgia, "Times New Roman", Times, serif !default;
+$museo-sans-family:			"Museo Sans 500", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//-- Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            45px !default;
+$font-size-h2:            26px !default;
+$font-size-h3:            17px !default;
+$font-size-h4:            16px !default;
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// line-height
+$line-height-base:        1.6 !default; // 20/14
+//** Computed line-height for use with `margin`, `padding`, etc
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+// Headings
+$headings-font-family:    $museo-sans-family !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          #585657 !default;
+
+
+//== Components
+//
+//-- Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     8px !default;
+$padding-base-horizontal:   20px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default;
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        2px !default;
+$border-radius-large:       4px !default;
+$border-radius-small:       2px !default;
+
+
+//== Buttons
+$btn-font-weight:		normal !default;
+
+$btn-color:				#fff !default;
+$btn-bg:				$brand-primary !default;
+$btn-border:			$btn-bg !default;
+
+// Button radius 
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;
+
+
+//== Forms
+//-- inputs background color
+$input-bg:                       #fff !default;
+//** inputs disabled background color
+$input-bg-disabled:              $gray-light !default;
+
+//-- Text color for inputs
+$input-color:                    $gray !default;
+//-- `<input>` border color
+$input-border:                   #ccc !default;
+
+//-- Border color for inputs on focus
+$input-border-focus:             #66afe9 !default;
+
+//-- Placeholder text color
+$input-color-placeholder:        #999 !default;
+
+$legend-color:                   $gray-dark !default;
+$legend-border-color:            #e5e5e5 !default;
+
+
+//-- Z-index
+$zindex-navbar:            1000 !default;
+
+
+//-- Media queries breakpoints
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//== Grid system
+//-- Number of columns in the grid.
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+
+// Navbar collapse
+//-- Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//-- Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//-- For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//-- For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1110px + $grid-gutter-width) !default;
+//-- For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+//== Thumbnails
+//** Padding around the thumbnail image
+$thumbnail-padding:           4px !default;
+//** Thumbnail background color
+$thumbnail-bg:                $body-bg !default;
+//** Thumbnail border color
+$thumbnail-border:            #ddd !default;
+//** Thumbnail border radius
+$thumbnail-border-radius:     $border-radius-base !default;
+
+
+//== Navbar
+// Basics of a navbar
+$navbar-bg:							$white !default;
+$navbar-color:						$headings-color !default;
+
+// Navbar links
+$navbar-link-color:					$headings-color !default;
+$navbar-link-hover-color:			#333 !default;
+$navbar-link-active-color:			#555 !default;
+
+// Navbar brand label
+$navbar-brand-color:               $navbar-link-color !default;
+$navbar-brand-hover-color:         darken($navbar-brand-color, 10%) !default;
+$navbar-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-toggle-hover-bg:           #f8f8f8 !default;
+$navbar-toggle-icon-bar-bg:        $brand-primary !default;
+$navbar-toggle-border-color:       transparent !default;
+
+
+//== Footer
+$footer-bg:							#454850 !default;
+$footer-color:						#979eb1 !default;

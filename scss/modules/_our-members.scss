@@ -1,0 +1,19 @@
+// Our Members
+// --------------------------------------------------
+
+.our-members {
+
+  @include e('logo') {
+	height: 110px;
+	line-height: 110px;
+    img {
+	  display: inline;
+	  vertical-align: middle;
+	  max-height: 75px;
+	  max-width: 130px;
+	  height: auto;
+	  width: auto;
+    }
+  }
+
+}

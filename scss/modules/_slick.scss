@@ -1,0 +1,43 @@
+// Slick
+// --------------------------------------------------
+
+.slick {
+  .slick-list {
+	.slick-slide {
+	  outline: none;
+	  padding-left:  floor(($grid-gutter-width / 2));
+      padding-right: ceil(($grid-gutter-width / 2));
+	}
+  }
+}
+.slick-dots {
+  li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-color: #979eb1;
+	&.slick-active {
+	  background-color: $brand-primary;
+	}
+  }
+}
+.slick__arrow {
+  .slick-arrow {
+	width: 30px;
+	height: 30px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	&::before {display: none; }
+	&.slick-prev {
+	  background-image: url("../images/prev-arrow.svg");
+	  left: -15px;
+	}
+	&.slick-next {
+	  background-image: url("../images/next-arrow.svg");
+	  right: -15px;
+	}
+  }
+}

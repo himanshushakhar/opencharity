@@ -1,0 +1,25 @@
+// Footer
+// --------------------------------------------------
+
+#footer {
+  width: 100%;
+  background-color: $footer-bg;
+  color: $footer-color;
+  text-align: center;
+  padding: 30px 0;
+  &.footer-fixed-bottom {
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+  }
+  .block {
+	margin-bottom: 30px;
+	&.last {
+	  margin-bottom: 0;
+	}
+  }
+  .copyright {
+	border-top: 1px solid #575b64;
+	padding-top: 30px;
+  }
+}

@@ -1,0 +1,99 @@
+// Forms
+// --------------------------------------------------
+
+input,
+textarea,
+select,
+input[type=search],
+button {
+  max-width: 100%;
+}
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+textarea,
+textarea.form-textarea,
+input[type=search] {
+  background-color: $input-bg;
+  border: solid 1px $input-border;
+  padding: 7px;
+}
+textarea {
+  line-height: 1.5em;
+}
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor: pointer;
+  border-radius: 0px;
+  background-color: #ffffff;
+  @include box-shadow(inset 1px 1px 5px rgba(0,0,0,.1));
+}
+
+/* --- form focus --- */
+textarea:focus,
+input[type=password]:focus,
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=search]:focus {
+  outline: none;
+  @include box-shadow(inset 1px 1px 5px rgba(0,0,0,.1));
+}
+input.form-text:focus,
+textarea.form-textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+}
+fieldset {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  padding: 0 0 10px;
+  position: relative;
+  top: 12px; /* Offsets the negative margin of legends */
+}
+.fieldset-wrapper {
+  margin-top: 40px;
+}
+fieldset.collapsed {
+  background: transparent;
+}
+fieldset legend {
+  background: #dbdbdb;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  color: #3b3b3b;
+  display: block;
+  height: 2em;
+  left: -1px; /* LTR */
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  line-height: 2;
+  padding: 0;
+  position: absolute;
+  text-indent: 10px;
+  text-shadow: 0 1px 0 #fff;
+  top: -12px;
+  width: 100%;
+}
+fieldset legend a {
+  color: #3b3b3b;
+}
+fieldset legend a:hover,
+fieldset legend a:focus,
+fieldset legend a:active {
+  color: #000;
+}
+fieldset .fieldset-wrapper {
+  padding: 0 10px;
+}
+fieldset .fieldset-description {
+  margin-top: 5px;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  color: #3c3c3c;
+  font-style: italic;
+}

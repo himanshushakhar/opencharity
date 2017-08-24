@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+h1 {
+  font-size: ceil(($font-size-h1 * 0.75));
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-h1;
+  }
+}
+h2 {
+  font-size: ceil(($font-size-h2 * 0.85));
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-h2;
+  }
+}
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+h1,h2,h3 {
+  margin: 0 0 20px;
+}
+h4,h5,h6 {
+  margin: 0 0 15px;
+}
+p {
+  margin: 0 0 10px;
+  &:last-child {
+	margin-bottom: 0;
+  }
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+.text-lg {
+  font-size: 17px;
+}
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+  font-size: 110%;
+}
+/* Blockquote */
+blockquote {
+  border-left: 3px solid $brand-primary;
+  background-color: $gray-lighter;
+  margin: 20px;
+  padding: 0;
+  position: relative;
+  p {
+	margin: 0;
+	padding: 2em 4.2em;
+	&::before, &::after {
+	  line-height: 1;
+	  position: absolute;
+	  opacity: 0.1;
+	  font-family: $font-family-serif;
+	  font-weight: bold;
+	  font-size: 60px;
+	}
+	&:before {
+	  content: "\201C";
+	  top: 13%;
+	  margin-left: -30px;
+	}
+	&:after {
+	  content: "\201D";
+	}
+  }
+}
+code,
+pre,
+kbd,
+samp,
+var {
+  font-size: 0.8em;
+  font-family: $font-family-monospace;
+}
+pre code,
+pre kbd,
+pre samp,
+pre var,
+kbd kbd,
+kbd samp,
+code var {
+  font-size: 100%;
+}
+.description code {
+  font-size: 1em;
+}
+/* locationmap */
+.gm-style, .gm-style .gm-style-iw {
+  font: inherit;
+}

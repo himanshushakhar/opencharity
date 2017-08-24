@@ -1,0 +1,24 @@
+// Events
+// --------------------------------------------------
+
+.event {
+
+  @media (max-width: $screen-xs-max) { text-align: center; }
+
+  @include e('title') {
+    margin-bottom: 5px;
+    span {
+	  color: $brand-primary;
+    }
+  }
+
+  @include e('btn') {
+	float: right;
+	@media (max-width: $screen-xs-max) {
+	  float: none;
+	  margin-top: 15px;
+	  display: block;
+	}
+  }
+
+}

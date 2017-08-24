@@ -1,0 +1,35 @@
+name = opencharity
+description = A flexible theme with many regions by Himanshu Shakhar.
+core = 7.x
+screenshot = screenshot.png
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]			= Navigation
+regions[banner_area]		= Banner Area
+regions[featured]			= Featured
+regions[highlighted]		= Highlighted
+regions[help]				= Help
+regions[content]			= Content
+regions[sidebar_first]		= Sidebar first
+regions[sidebar_second]		= Sidebar second
+regions[postscript_bottom]	= Postscript bottom
+regions[footer]				= Footer
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/script.js

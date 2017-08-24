@@ -1,0 +1,93 @@
+// Node
+// --------------------------------------------------
+
+.node-teaser {
+  margin: 0 0 $grid-gutter-width 0;
+  background-color: $gray-lighter;
+  border-radius: $border-radius-base;
+  padding: $grid-gutter-width;
+  h2 {
+	margin: 0 0 5px 0;
+  }
+  &.sticky {
+    background-color: #f9f9f9;
+    background: rgba(0, 0, 0, 0.024);
+    border: 1px solid #d3d7d9;
+    padding: 0 15px 15px;
+  }
+}
+.node-full .field-type-image .field-item, .node-teaser .field-type-image .field-item {
+  margin-bottom: $grid-gutter-width;
+}
+.submitted {
+  padding: 0;
+  color: lighten($gray, 33.5%);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0 0 15px 0;
+}
+.unpublished {
+  margin: -20px -15px 0;
+  padding: 20px 15px 0;
+  .comment-text {
+	.comment-arrow {
+	  border-left: 1px solid #fff4f4;
+	  border-right: 1px solid #fff4f4;
+	}
+  }
+}
+
+.field-type-taxonomy-term-reference {
+  margin: 20px 0;
+  .field-label {
+    margin: 4px 0;
+    text-transform: uppercase;
+  }
+  ul.links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+	  float: left; 
+	  margin: 0 0 0 5px;
+	  padding: 0;
+	  white-space: nowrap;
+	  a {
+		font-size: 11px;
+		padding: 5px 10px;
+		border: 1px solid;
+		border-radius: $border-radius-base;
+		text-transform: uppercase;
+	  }
+	}
+  }
+}
+
+.link-wrapper {
+  padding: 0;
+  margin: 10px 0 0 0;
+  .meta {
+    display: inline;
+  }
+  ul.links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li {
+	  padding: 0;
+	  margin: 0 10px 0 0;
+	  a {
+		display: inline-block;
+	  }
+	  &.node-readmore {
+		a {
+		  text-transform: uppercase;
+		  border-radius: $border-radius-base;
+		  border: 1px solid;
+		  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+		  @include user-select(none);
+		}
+	  }
+	}
+  }
+}

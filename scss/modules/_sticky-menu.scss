@@ -1,0 +1,22 @@
+// Sticky menu
+// --------------------------------------------------
+
+.sticky-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: $zindex-navbar;
+  width: 100%;
+  overflow: visible;
+}
+#header.shrink {
+  @include box-shadow(0 2px 5px 0 rgba(0,0,0,.06));
+  height: 60px;
+  @media (min-width: $screen-sm-min) { #main-menu { margin-top: 9px; } }
+  .logo {
+    margin-top: ceil((60px - 20px) / 2);
+	img {
+	  height: 20px;
+	}
+  }
+}
